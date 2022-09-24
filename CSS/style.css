@@ -27,9 +27,9 @@ body {
     /* width: 200px; */
     box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.75),
     10px 10px 70px rgba(0, 0, 0, 0.25),
-    inset 5px 5px 10px rgba(25, 25, 25, 5),
+    inset 5px 5px 10px rgba(25, 25, 25, 0.5),
     inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    inset -5px -5px 15px rgba(2, 2, 2, 0.75);
     display: flex;
     justify-content: center;
     align-items:center;
@@ -53,7 +53,7 @@ body {
     display: flex;
     justify-content: center;
     align-items:center;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 .clock::before {
@@ -163,13 +163,28 @@ body {
     padding: 10px 20px;
     font-size: 2em;
     font-weight: 600;
-    border: 2px solid rgba(0, 0, 0, 5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
     border-radius: 40px;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 5), 
-    inset 2px 2px 10px rgba(0, 0, 0, 5),
-    inset -5px -5px 10px rgba(0, 0, 0, 75);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), 
+    inset 5px 5px 10px rgba(25, 25, 25, 0.5), 
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
 }
+
+#time div {
+    position: relative;
+    width: 60px;
+    text-align: center;
+    font-weight: 500;
+}
+
+#align-items div:nth-child(1)::after {
+    content:':';
+    position: absolute;
+    right: -4px;
+}
+
