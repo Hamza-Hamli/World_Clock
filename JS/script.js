@@ -1,10 +1,9 @@
 
-// let hir = document.querySelector('#hr');
 
 setInterval(() => {
-    let hr = document.querySelector('#hr');
-    let mn = document.querySelector('#mn');
-    let sc = document.querySelector('#sc');
+    let hr = document.getElementById('#hr');
+    let mn = document.getElementById('mn');
+    let sc = document.getElementById('sc');
     
     let day = new Date();
     let hh = day.getHours() * 30;
@@ -42,9 +41,9 @@ setInterval(() => {
     m = (m < 10)? "0" + m : m
     s = (s < 10)? "0" + s : s
 
-    // hours.innerHTML = h;
-    // minutes.innerHTML = m;
-    // seconds.innerHTML = s;
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    seconds.innerHTML = s;
     ampm.innerHTML = am;
 })
 

@@ -59,6 +59,8 @@ body {
 .clock::before {
     content: '';
     position: absolute;
+    margin: 0;
+    padding: 0;
     width: 8px;
     height: 8px;
     background: #2f363e;
@@ -119,12 +121,12 @@ body {
     height: 50px;
     background:var(--clr);
     opacity: 0.75;
-    transform-origin: bottom; /*problem here*/
-    transform: scaleY(0.5);
-    -webkit-transform: scaleY(0.5);
-    -moz-transform: scaleY(0.5);
-    -ms-transform: scaleY(0.5);
-    -o-transform: scaleY(0.5);
+    transform-origin: bottom;  /*problem here*/
+    transform: scaleY(0.8);
+    -webkit-transform: scaleY(0.8);
+    -moz-transform: scaleY(0.8);
+    -ms-transform: scaleY(0.8);
+    -o-transform: scaleY(0.8);
 }
 
 .circle:nth-child(1) i {
@@ -183,7 +185,7 @@ body {
     color: var(--clr)
 }
 
-.dg:nth-child(1)::after, /*problem here*/
+.dg:nth-child(1)::after, 
 .dg:nth-child(2)::after {
     content:':';
     position: absolute;
